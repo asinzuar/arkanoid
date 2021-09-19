@@ -3,9 +3,7 @@ package gui;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 public class BouncingBallFrame
         extends JFrame
@@ -50,7 +48,7 @@ public class BouncingBallFrame
 
 
         setResizable(false);
-        setDefaultCloseOperation(3);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
         this.gamePanel.initGameComponents();
     }
